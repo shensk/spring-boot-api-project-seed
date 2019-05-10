@@ -49,7 +49,7 @@ public class MybatisConfigurer {
     }
 
     @Bean
-    public MapperScannerConfigurer mapperScannerConfigurer() {
+    public static MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
         mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactoryBean");
         mapperScannerConfigurer.setBasePackage(MAPPER_PACKAGE);
